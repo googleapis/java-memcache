@@ -1,11 +1,10 @@
 {
-  "updateTime": "2020-04-09T10:13:05.336422Z",
   "sources": [
     {
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-memcache.git",
-        "sha": "e764a8aed1ebc9be09007dd655957d411eb29077"
+        "sha": "e245c5bba71f13013c41f90d00c4080a81d7cd06"
       }
     },
     {
