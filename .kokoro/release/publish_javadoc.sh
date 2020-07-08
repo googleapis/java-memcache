@@ -29,8 +29,14 @@ if [[ -z "${STAGING_BUCKET_V2}" ]]; then
   exit 1
 fi
 
+echo "**********"
+pwd
+ls -lR ${KOKORO_GFILE_DIR}
+
 # work from the git root directory
 pushd $(dirname "$0")/../../
+echo "******"
+pwd
 
 # install docuploader package
 python3 -m pip install gcp-docuploader
@@ -61,7 +67,7 @@ popd
 
 
 # V2
-mvn clean site -B -Ddevsite.template="$(dirname `pwd`)/doc-templates/java/"
+mvn clean site -B -Ddevsite.template="${KOKORO_GFILE_DIR}/java-doc-template"
 
 pushd target/devsite
 
