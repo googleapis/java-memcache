@@ -48,7 +48,7 @@ NAME=google-cloud-memcache
 VERSION=$(grep ${NAME}: versions.txt | cut -d: -f3)
 
 # build the docs
-mvn site -B
+mvn site -B -q
 
 pushd target/site/apidocs
 
@@ -67,7 +67,7 @@ popd
 
 
 # V2
-mvn clean site -B -Ddevsite.template="${KOKORO_GFILE_DIR}/java-doc-template"
+mvn clean site -B -q -Ddevsite.template="${KOKORO_GFILE_DIR}/java-doc-templates/"
 
 pushd target/devsite
 
