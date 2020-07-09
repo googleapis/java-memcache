@@ -40,7 +40,7 @@ pushd $(dirname "$0")/../../
 python3 -m pip install gcp-docuploader
 
 # compile all packages
-mvn clean install -B -DskipTests=true
+mvn clean install -B -q -DskipTests=true
 
 NAME=google-cloud-memcache
 VERSION=$(grep ${NAME}: versions.txt | cut -d: -f3)
