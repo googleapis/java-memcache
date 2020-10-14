@@ -41,12 +41,10 @@ If you are using Maven without BOM, add this to your dependencies:
 <dependency>
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloud-memcache</artifactId>
-  <version>0.2.2</version>
+  <version>0.2.4</version>
 </dependency>
 
 ```
-
-[//]: # ({x-version-update-start:google-cloud-memcache:released})
 
 If you are using Gradle, add this to your dependencies
 ```Groovy
@@ -56,7 +54,6 @@ If you are using SBT, add this to your dependencies
 ```Scala
 libraryDependencies += "com.google.cloud" % "google-cloud-memcache" % "0.2.4"
 ```
-[//]: # ({x-version-update-end})
 
 ## Authentication
 
