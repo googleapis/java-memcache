@@ -22,24 +22,7 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/**
- *
- *
- * <pre>
- * Configures and manages Cloud Memorystore for Memcached instances.
- * The `memcache.googleapis.com` service implements the Google Cloud Memorystore
- * for Memcached API and defines the following resource model for managing
- * Memorystore Memcached (also called Memcached below) instances:
- * * The service works with a collection of cloud projects, named: `/projects/&#42;`
- * * Each project has a collection of available locations, named: `/locations/&#42;`
- * * Each location has a collection of Memcached instances, named:
- * `/instances/&#42;`
- * * As such, Memcached instances are resources of the form:
- *   `/projects/{project_id}/locations/{location_id}/instances/{instance_id}`
- * Note that location_id must be refering to a GCP `region`; for example:
- * * `projects/my-memcached-project/locations/us-central1/instances/my-memcached`
- * </pre>
- */
+/** */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: google/cloud/memcache/v1beta2/cloud_memcache.proto")
@@ -407,33 +390,10 @@ public final class CloudMemcacheGrpc {
     return CloudMemcacheFutureStub.newStub(factory, channel);
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Configures and manages Cloud Memorystore for Memcached instances.
-   * The `memcache.googleapis.com` service implements the Google Cloud Memorystore
-   * for Memcached API and defines the following resource model for managing
-   * Memorystore Memcached (also called Memcached below) instances:
-   * * The service works with a collection of cloud projects, named: `/projects/&#42;`
-   * * Each project has a collection of available locations, named: `/locations/&#42;`
-   * * Each location has a collection of Memcached instances, named:
-   * `/instances/&#42;`
-   * * As such, Memcached instances are resources of the form:
-   *   `/projects/{project_id}/locations/{location_id}/instances/{instance_id}`
-   * Note that location_id must be refering to a GCP `region`; for example:
-   * * `projects/my-memcached-project/locations/us-central1/instances/my-memcached`
-   * </pre>
-   */
+  /** */
   public abstract static class CloudMemcacheImplBase implements io.grpc.BindableService {
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists Instances in a given project and location.
-     * </pre>
-     */
+    /** */
     public void listInstances(
         com.google.cloud.memcache.v1beta2.ListInstancesRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.memcache.v1beta2.ListInstancesResponse>
@@ -441,81 +401,42 @@ public final class CloudMemcacheGrpc {
       asyncUnimplementedUnaryCall(getListInstancesMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets details of a single Instance.
-     * </pre>
-     */
+    /** */
     public void getInstance(
         com.google.cloud.memcache.v1beta2.GetInstanceRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.memcache.v1beta2.Instance> responseObserver) {
       asyncUnimplementedUnaryCall(getGetInstanceMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a new Instance in a given project and location.
-     * </pre>
-     */
+    /** */
     public void createInstance(
         com.google.cloud.memcache.v1beta2.CreateInstanceRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
       asyncUnimplementedUnaryCall(getCreateInstanceMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates an existing Instance in a given project and location.
-     * </pre>
-     */
+    /** */
     public void updateInstance(
         com.google.cloud.memcache.v1beta2.UpdateInstanceRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
       asyncUnimplementedUnaryCall(getUpdateInstanceMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the defined Memcached Parameters for an existing Instance.
-     * This method only stages the parameters, it must be followed by
-     * ApplyParameters to apply the parameters to nodes of the Memcached Instance.
-     * </pre>
-     */
+    /** */
     public void updateParameters(
         com.google.cloud.memcache.v1beta2.UpdateParametersRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
       asyncUnimplementedUnaryCall(getUpdateParametersMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a single Instance.
-     * </pre>
-     */
+    /** */
     public void deleteInstance(
         com.google.cloud.memcache.v1beta2.DeleteInstanceRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
       asyncUnimplementedUnaryCall(getDeleteInstanceMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * ApplyParameters will update current set of Parameters to the set of
-     * specified nodes of the Memcached Instance.
-     * </pre>
-     */
+    /** */
     public void applyParameters(
         com.google.cloud.memcache.v1beta2.ApplyParametersRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -572,24 +493,7 @@ public final class CloudMemcacheGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Configures and manages Cloud Memorystore for Memcached instances.
-   * The `memcache.googleapis.com` service implements the Google Cloud Memorystore
-   * for Memcached API and defines the following resource model for managing
-   * Memorystore Memcached (also called Memcached below) instances:
-   * * The service works with a collection of cloud projects, named: `/projects/&#42;`
-   * * Each project has a collection of available locations, named: `/locations/&#42;`
-   * * Each location has a collection of Memcached instances, named:
-   * `/instances/&#42;`
-   * * As such, Memcached instances are resources of the form:
-   *   `/projects/{project_id}/locations/{location_id}/instances/{instance_id}`
-   * Note that location_id must be refering to a GCP `region`; for example:
-   * * `projects/my-memcached-project/locations/us-central1/instances/my-memcached`
-   * </pre>
-   */
+  /** */
   public static final class CloudMemcacheStub
       extends io.grpc.stub.AbstractAsyncStub<CloudMemcacheStub> {
     private CloudMemcacheStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -601,13 +505,7 @@ public final class CloudMemcacheGrpc {
       return new CloudMemcacheStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists Instances in a given project and location.
-     * </pre>
-     */
+    /** */
     public void listInstances(
         com.google.cloud.memcache.v1beta2.ListInstancesRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.memcache.v1beta2.ListInstancesResponse>
@@ -618,13 +516,7 @@ public final class CloudMemcacheGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets details of a single Instance.
-     * </pre>
-     */
+    /** */
     public void getInstance(
         com.google.cloud.memcache.v1beta2.GetInstanceRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.memcache.v1beta2.Instance> responseObserver) {
@@ -634,13 +526,7 @@ public final class CloudMemcacheGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a new Instance in a given project and location.
-     * </pre>
-     */
+    /** */
     public void createInstance(
         com.google.cloud.memcache.v1beta2.CreateInstanceRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -650,13 +536,7 @@ public final class CloudMemcacheGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates an existing Instance in a given project and location.
-     * </pre>
-     */
+    /** */
     public void updateInstance(
         com.google.cloud.memcache.v1beta2.UpdateInstanceRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -666,15 +546,7 @@ public final class CloudMemcacheGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the defined Memcached Parameters for an existing Instance.
-     * This method only stages the parameters, it must be followed by
-     * ApplyParameters to apply the parameters to nodes of the Memcached Instance.
-     * </pre>
-     */
+    /** */
     public void updateParameters(
         com.google.cloud.memcache.v1beta2.UpdateParametersRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -684,13 +556,7 @@ public final class CloudMemcacheGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a single Instance.
-     * </pre>
-     */
+    /** */
     public void deleteInstance(
         com.google.cloud.memcache.v1beta2.DeleteInstanceRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -700,14 +566,7 @@ public final class CloudMemcacheGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * ApplyParameters will update current set of Parameters to the set of
-     * specified nodes of the Memcached Instance.
-     * </pre>
-     */
+    /** */
     public void applyParameters(
         com.google.cloud.memcache.v1beta2.ApplyParametersRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -718,24 +577,7 @@ public final class CloudMemcacheGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Configures and manages Cloud Memorystore for Memcached instances.
-   * The `memcache.googleapis.com` service implements the Google Cloud Memorystore
-   * for Memcached API and defines the following resource model for managing
-   * Memorystore Memcached (also called Memcached below) instances:
-   * * The service works with a collection of cloud projects, named: `/projects/&#42;`
-   * * Each project has a collection of available locations, named: `/locations/&#42;`
-   * * Each location has a collection of Memcached instances, named:
-   * `/instances/&#42;`
-   * * As such, Memcached instances are resources of the form:
-   *   `/projects/{project_id}/locations/{location_id}/instances/{instance_id}`
-   * Note that location_id must be refering to a GCP `region`; for example:
-   * * `projects/my-memcached-project/locations/us-central1/instances/my-memcached`
-   * </pre>
-   */
+  /** */
   public static final class CloudMemcacheBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<CloudMemcacheBlockingStub> {
     private CloudMemcacheBlockingStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -748,113 +590,51 @@ public final class CloudMemcacheGrpc {
       return new CloudMemcacheBlockingStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists Instances in a given project and location.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.memcache.v1beta2.ListInstancesResponse listInstances(
         com.google.cloud.memcache.v1beta2.ListInstancesRequest request) {
       return blockingUnaryCall(getChannel(), getListInstancesMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets details of a single Instance.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.memcache.v1beta2.Instance getInstance(
         com.google.cloud.memcache.v1beta2.GetInstanceRequest request) {
       return blockingUnaryCall(getChannel(), getGetInstanceMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a new Instance in a given project and location.
-     * </pre>
-     */
+    /** */
     public com.google.longrunning.Operation createInstance(
         com.google.cloud.memcache.v1beta2.CreateInstanceRequest request) {
       return blockingUnaryCall(getChannel(), getCreateInstanceMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates an existing Instance in a given project and location.
-     * </pre>
-     */
+    /** */
     public com.google.longrunning.Operation updateInstance(
         com.google.cloud.memcache.v1beta2.UpdateInstanceRequest request) {
       return blockingUnaryCall(getChannel(), getUpdateInstanceMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the defined Memcached Parameters for an existing Instance.
-     * This method only stages the parameters, it must be followed by
-     * ApplyParameters to apply the parameters to nodes of the Memcached Instance.
-     * </pre>
-     */
+    /** */
     public com.google.longrunning.Operation updateParameters(
         com.google.cloud.memcache.v1beta2.UpdateParametersRequest request) {
       return blockingUnaryCall(
           getChannel(), getUpdateParametersMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a single Instance.
-     * </pre>
-     */
+    /** */
     public com.google.longrunning.Operation deleteInstance(
         com.google.cloud.memcache.v1beta2.DeleteInstanceRequest request) {
       return blockingUnaryCall(getChannel(), getDeleteInstanceMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * ApplyParameters will update current set of Parameters to the set of
-     * specified nodes of the Memcached Instance.
-     * </pre>
-     */
+    /** */
     public com.google.longrunning.Operation applyParameters(
         com.google.cloud.memcache.v1beta2.ApplyParametersRequest request) {
       return blockingUnaryCall(getChannel(), getApplyParametersMethod(), getCallOptions(), request);
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Configures and manages Cloud Memorystore for Memcached instances.
-   * The `memcache.googleapis.com` service implements the Google Cloud Memorystore
-   * for Memcached API and defines the following resource model for managing
-   * Memorystore Memcached (also called Memcached below) instances:
-   * * The service works with a collection of cloud projects, named: `/projects/&#42;`
-   * * Each project has a collection of available locations, named: `/locations/&#42;`
-   * * Each location has a collection of Memcached instances, named:
-   * `/instances/&#42;`
-   * * As such, Memcached instances are resources of the form:
-   *   `/projects/{project_id}/locations/{location_id}/instances/{instance_id}`
-   * Note that location_id must be refering to a GCP `region`; for example:
-   * * `projects/my-memcached-project/locations/us-central1/instances/my-memcached`
-   * </pre>
-   */
+  /** */
   public static final class CloudMemcacheFutureStub
       extends io.grpc.stub.AbstractFutureStub<CloudMemcacheFutureStub> {
     private CloudMemcacheFutureStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -867,13 +647,7 @@ public final class CloudMemcacheGrpc {
       return new CloudMemcacheFutureStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists Instances in a given project and location.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.memcache.v1beta2.ListInstancesResponse>
         listInstances(com.google.cloud.memcache.v1beta2.ListInstancesRequest request) {
@@ -881,13 +655,7 @@ public final class CloudMemcacheGrpc {
           getChannel().newCall(getListInstancesMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets details of a single Instance.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.memcache.v1beta2.Instance>
         getInstance(com.google.cloud.memcache.v1beta2.GetInstanceRequest request) {
@@ -895,68 +663,35 @@ public final class CloudMemcacheGrpc {
           getChannel().newCall(getGetInstanceMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a new Instance in a given project and location.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         createInstance(com.google.cloud.memcache.v1beta2.CreateInstanceRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getCreateInstanceMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates an existing Instance in a given project and location.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         updateInstance(com.google.cloud.memcache.v1beta2.UpdateInstanceRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getUpdateInstanceMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the defined Memcached Parameters for an existing Instance.
-     * This method only stages the parameters, it must be followed by
-     * ApplyParameters to apply the parameters to nodes of the Memcached Instance.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         updateParameters(com.google.cloud.memcache.v1beta2.UpdateParametersRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getUpdateParametersMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a single Instance.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         deleteInstance(com.google.cloud.memcache.v1beta2.DeleteInstanceRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getDeleteInstanceMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * ApplyParameters will update current set of Parameters to the set of
-     * specified nodes of the Memcached Instance.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         applyParameters(com.google.cloud.memcache.v1beta2.ApplyParametersRequest request) {
       return futureUnaryCall(
