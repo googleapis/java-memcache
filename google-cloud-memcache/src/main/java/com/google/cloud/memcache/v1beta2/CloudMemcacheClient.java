@@ -37,7 +37,6 @@ import com.google.protobuf.Empty;
 import com.google.protobuf.FieldMask;
 import java.io.IOException;
 import java.util.List;
-import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.Generated;
 
@@ -188,7 +187,7 @@ public class CloudMemcacheClient implements BackgroundResource {
   public final ListInstancesPagedResponse listInstances(LocationName parent) {
     ListInstancesRequest request =
         ListInstancesRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .build();
     return listInstances(request);
   }
@@ -249,9 +248,7 @@ public class CloudMemcacheClient implements BackgroundResource {
    */
   public final Instance getInstance(InstanceName name) {
     GetInstanceRequest request =
-        GetInstanceRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
-            .build();
+        GetInstanceRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     return getInstance(request);
   }
 
@@ -313,7 +310,7 @@ public class CloudMemcacheClient implements BackgroundResource {
       LocationName parent, String instanceId, Instance resource) {
     CreateInstanceRequest request =
         CreateInstanceRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setInstanceId(instanceId)
             .setResource(resource)
             .build();
@@ -448,7 +445,7 @@ public class CloudMemcacheClient implements BackgroundResource {
       InstanceName name, FieldMask updateMask, MemcacheParameters parameters) {
     UpdateParametersRequest request =
         UpdateParametersRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .setUpdateMask(updateMask)
             .setParameters(parameters)
             .build();
@@ -581,7 +578,7 @@ public class CloudMemcacheClient implements BackgroundResource {
       InstanceName name, List<String> nodeIds, boolean applyAll) {
     ApplyParametersRequest request =
         ApplyParametersRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .addAllNodeIds(nodeIds)
             .setApplyAll(applyAll)
             .build();
