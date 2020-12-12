@@ -180,18 +180,18 @@ public class CloudMemcacheClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName(InstanceName.of("[PROJECT]", "[LOCATION]", "[INSTANCE]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .putAllLabels(new HashMap<String, String>())
-            .setAuthorizedNetwork("authorized_network-1733809270")
+            .setAuthorizedNetwork("authorizedNetwork1515554835")
             .addAllZones(new ArrayList<String>())
             .setNodeCount(1539922066)
             .setParameters(MemcacheParameters.newBuilder().build())
             .addAllMemcacheNodes(new ArrayList<Instance.Node>())
             .setCreateTime(Timestamp.newBuilder().build())
             .setUpdateTime(Timestamp.newBuilder().build())
-            .setMemcacheFullVersion("memcache_full_version-1666834598")
+            .setMemcacheFullVersion("memcacheFullVersion976507452")
             .addAllInstanceMessages(new ArrayList<Instance.InstanceMessage>())
-            .setDiscoveryEndpoint("discovery_endpoint224997188")
+            .setDiscoveryEndpoint("discoveryEndpoint-1155573915")
             .build();
     mockCloudMemcache.addResponse(expectedResponse);
 
@@ -230,18 +230,18 @@ public class CloudMemcacheClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName(InstanceName.of("[PROJECT]", "[LOCATION]", "[INSTANCE]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .putAllLabels(new HashMap<String, String>())
-            .setAuthorizedNetwork("authorized_network-1733809270")
+            .setAuthorizedNetwork("authorizedNetwork1515554835")
             .addAllZones(new ArrayList<String>())
             .setNodeCount(1539922066)
             .setParameters(MemcacheParameters.newBuilder().build())
             .addAllMemcacheNodes(new ArrayList<Instance.Node>())
             .setCreateTime(Timestamp.newBuilder().build())
             .setUpdateTime(Timestamp.newBuilder().build())
-            .setMemcacheFullVersion("memcache_full_version-1666834598")
+            .setMemcacheFullVersion("memcacheFullVersion976507452")
             .addAllInstanceMessages(new ArrayList<Instance.InstanceMessage>())
-            .setDiscoveryEndpoint("discovery_endpoint224997188")
+            .setDiscoveryEndpoint("discoveryEndpoint-1155573915")
             .build();
     mockCloudMemcache.addResponse(expectedResponse);
 
@@ -280,18 +280,18 @@ public class CloudMemcacheClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName(InstanceName.of("[PROJECT]", "[LOCATION]", "[INSTANCE]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .putAllLabels(new HashMap<String, String>())
-            .setAuthorizedNetwork("authorized_network-1733809270")
+            .setAuthorizedNetwork("authorizedNetwork1515554835")
             .addAllZones(new ArrayList<String>())
             .setNodeCount(1539922066)
             .setParameters(MemcacheParameters.newBuilder().build())
             .addAllMemcacheNodes(new ArrayList<Instance.Node>())
             .setCreateTime(Timestamp.newBuilder().build())
             .setUpdateTime(Timestamp.newBuilder().build())
-            .setMemcacheFullVersion("memcache_full_version-1666834598")
+            .setMemcacheFullVersion("memcacheFullVersion976507452")
             .addAllInstanceMessages(new ArrayList<Instance.InstanceMessage>())
-            .setDiscoveryEndpoint("discovery_endpoint224997188")
+            .setDiscoveryEndpoint("discoveryEndpoint-1155573915")
             .build();
     Operation resultOperation =
         Operation.newBuilder()
@@ -302,7 +302,7 @@ public class CloudMemcacheClientTest {
     mockCloudMemcache.addResponse(resultOperation);
 
     LocationName parent = LocationName.of("[PROJECT]", "[LOCATION]");
-    String instanceId = "instance_id-2101995259";
+    String instanceId = "instanceId902024336";
     Instance resource = Instance.newBuilder().build();
 
     Instance actualResponse = client.createInstanceAsync(parent, instanceId, resource).get();
@@ -328,7 +328,7 @@ public class CloudMemcacheClientTest {
 
     try {
       LocationName parent = LocationName.of("[PROJECT]", "[LOCATION]");
-      String instanceId = "instance_id-2101995259";
+      String instanceId = "instanceId902024336";
       Instance resource = Instance.newBuilder().build();
       client.createInstanceAsync(parent, instanceId, resource).get();
       Assert.fail("No exception raised");
@@ -344,18 +344,18 @@ public class CloudMemcacheClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName(InstanceName.of("[PROJECT]", "[LOCATION]", "[INSTANCE]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .putAllLabels(new HashMap<String, String>())
-            .setAuthorizedNetwork("authorized_network-1733809270")
+            .setAuthorizedNetwork("authorizedNetwork1515554835")
             .addAllZones(new ArrayList<String>())
             .setNodeCount(1539922066)
             .setParameters(MemcacheParameters.newBuilder().build())
             .addAllMemcacheNodes(new ArrayList<Instance.Node>())
             .setCreateTime(Timestamp.newBuilder().build())
             .setUpdateTime(Timestamp.newBuilder().build())
-            .setMemcacheFullVersion("memcache_full_version-1666834598")
+            .setMemcacheFullVersion("memcacheFullVersion976507452")
             .addAllInstanceMessages(new ArrayList<Instance.InstanceMessage>())
-            .setDiscoveryEndpoint("discovery_endpoint224997188")
+            .setDiscoveryEndpoint("discoveryEndpoint-1155573915")
             .build();
     Operation resultOperation =
         Operation.newBuilder()
@@ -366,7 +366,7 @@ public class CloudMemcacheClientTest {
     mockCloudMemcache.addResponse(resultOperation);
 
     String parent = "parent-995424086";
-    String instanceId = "instance_id-2101995259";
+    String instanceId = "instanceId902024336";
     Instance resource = Instance.newBuilder().build();
 
     Instance actualResponse = client.createInstanceAsync(parent, instanceId, resource).get();
@@ -392,7 +392,7 @@ public class CloudMemcacheClientTest {
 
     try {
       String parent = "parent-995424086";
-      String instanceId = "instance_id-2101995259";
+      String instanceId = "instanceId902024336";
       Instance resource = Instance.newBuilder().build();
       client.createInstanceAsync(parent, instanceId, resource).get();
       Assert.fail("No exception raised");
@@ -408,18 +408,18 @@ public class CloudMemcacheClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName(InstanceName.of("[PROJECT]", "[LOCATION]", "[INSTANCE]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .putAllLabels(new HashMap<String, String>())
-            .setAuthorizedNetwork("authorized_network-1733809270")
+            .setAuthorizedNetwork("authorizedNetwork1515554835")
             .addAllZones(new ArrayList<String>())
             .setNodeCount(1539922066)
             .setParameters(MemcacheParameters.newBuilder().build())
             .addAllMemcacheNodes(new ArrayList<Instance.Node>())
             .setCreateTime(Timestamp.newBuilder().build())
             .setUpdateTime(Timestamp.newBuilder().build())
-            .setMemcacheFullVersion("memcache_full_version-1666834598")
+            .setMemcacheFullVersion("memcacheFullVersion976507452")
             .addAllInstanceMessages(new ArrayList<Instance.InstanceMessage>())
-            .setDiscoveryEndpoint("discovery_endpoint224997188")
+            .setDiscoveryEndpoint("discoveryEndpoint-1155573915")
             .build();
     Operation resultOperation =
         Operation.newBuilder()
@@ -469,18 +469,18 @@ public class CloudMemcacheClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName(InstanceName.of("[PROJECT]", "[LOCATION]", "[INSTANCE]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .putAllLabels(new HashMap<String, String>())
-            .setAuthorizedNetwork("authorized_network-1733809270")
+            .setAuthorizedNetwork("authorizedNetwork1515554835")
             .addAllZones(new ArrayList<String>())
             .setNodeCount(1539922066)
             .setParameters(MemcacheParameters.newBuilder().build())
             .addAllMemcacheNodes(new ArrayList<Instance.Node>())
             .setCreateTime(Timestamp.newBuilder().build())
             .setUpdateTime(Timestamp.newBuilder().build())
-            .setMemcacheFullVersion("memcache_full_version-1666834598")
+            .setMemcacheFullVersion("memcacheFullVersion976507452")
             .addAllInstanceMessages(new ArrayList<Instance.InstanceMessage>())
-            .setDiscoveryEndpoint("discovery_endpoint224997188")
+            .setDiscoveryEndpoint("discoveryEndpoint-1155573915")
             .build();
     Operation resultOperation =
         Operation.newBuilder()
@@ -533,18 +533,18 @@ public class CloudMemcacheClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName(InstanceName.of("[PROJECT]", "[LOCATION]", "[INSTANCE]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .putAllLabels(new HashMap<String, String>())
-            .setAuthorizedNetwork("authorized_network-1733809270")
+            .setAuthorizedNetwork("authorizedNetwork1515554835")
             .addAllZones(new ArrayList<String>())
             .setNodeCount(1539922066)
             .setParameters(MemcacheParameters.newBuilder().build())
             .addAllMemcacheNodes(new ArrayList<Instance.Node>())
             .setCreateTime(Timestamp.newBuilder().build())
             .setUpdateTime(Timestamp.newBuilder().build())
-            .setMemcacheFullVersion("memcache_full_version-1666834598")
+            .setMemcacheFullVersion("memcacheFullVersion976507452")
             .addAllInstanceMessages(new ArrayList<Instance.InstanceMessage>())
-            .setDiscoveryEndpoint("discovery_endpoint224997188")
+            .setDiscoveryEndpoint("discoveryEndpoint-1155573915")
             .build();
     Operation resultOperation =
         Operation.newBuilder()
@@ -639,18 +639,18 @@ public class CloudMemcacheClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName(InstanceName.of("[PROJECT]", "[LOCATION]", "[INSTANCE]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .putAllLabels(new HashMap<String, String>())
-            .setAuthorizedNetwork("authorized_network-1733809270")
+            .setAuthorizedNetwork("authorizedNetwork1515554835")
             .addAllZones(new ArrayList<String>())
             .setNodeCount(1539922066)
             .setParameters(MemcacheParameters.newBuilder().build())
             .addAllMemcacheNodes(new ArrayList<Instance.Node>())
             .setCreateTime(Timestamp.newBuilder().build())
             .setUpdateTime(Timestamp.newBuilder().build())
-            .setMemcacheFullVersion("memcache_full_version-1666834598")
+            .setMemcacheFullVersion("memcacheFullVersion976507452")
             .addAllInstanceMessages(new ArrayList<Instance.InstanceMessage>())
-            .setDiscoveryEndpoint("discovery_endpoint224997188")
+            .setDiscoveryEndpoint("discoveryEndpoint-1155573915")
             .build();
     Operation resultOperation =
         Operation.newBuilder()
@@ -703,18 +703,18 @@ public class CloudMemcacheClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName(InstanceName.of("[PROJECT]", "[LOCATION]", "[INSTANCE]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .putAllLabels(new HashMap<String, String>())
-            .setAuthorizedNetwork("authorized_network-1733809270")
+            .setAuthorizedNetwork("authorizedNetwork1515554835")
             .addAllZones(new ArrayList<String>())
             .setNodeCount(1539922066)
             .setParameters(MemcacheParameters.newBuilder().build())
             .addAllMemcacheNodes(new ArrayList<Instance.Node>())
             .setCreateTime(Timestamp.newBuilder().build())
             .setUpdateTime(Timestamp.newBuilder().build())
-            .setMemcacheFullVersion("memcache_full_version-1666834598")
+            .setMemcacheFullVersion("memcacheFullVersion976507452")
             .addAllInstanceMessages(new ArrayList<Instance.InstanceMessage>())
-            .setDiscoveryEndpoint("discovery_endpoint224997188")
+            .setDiscoveryEndpoint("discoveryEndpoint-1155573915")
             .build();
     Operation resultOperation =
         Operation.newBuilder()
