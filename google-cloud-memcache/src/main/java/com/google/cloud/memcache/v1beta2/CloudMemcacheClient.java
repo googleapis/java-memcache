@@ -293,8 +293,8 @@ public class CloudMemcacheClient implements BackgroundResource {
    *
    * @param parent Required. The resource name of the instance location using the form:
    *     `projects/{project_id}/locations/{location_id}` where `location_id` refers to a GCP region
-   * @param instance_id Required. The logical name of the Memcached instance in the user project
-   *     with the following restrictions:
+   * @param instanceId Required. The logical name of the Memcached instance in the user project with
+   *     the following restrictions:
    *     <ul>
    *       <li>Must contain only lowercase letters, numbers, and hyphens.
    *       <li>Must start with a letter.
@@ -323,8 +323,8 @@ public class CloudMemcacheClient implements BackgroundResource {
    *
    * @param parent Required. The resource name of the instance location using the form:
    *     `projects/{project_id}/locations/{location_id}` where `location_id` refers to a GCP region
-   * @param instance_id Required. The logical name of the Memcached instance in the user project
-   *     with the following restrictions:
+   * @param instanceId Required. The logical name of the Memcached instance in the user project with
+   *     the following restrictions:
    *     <ul>
    *       <li>Must contain only lowercase letters, numbers, and hyphens.
    *       <li>Must start with a letter.
@@ -384,7 +384,7 @@ public class CloudMemcacheClient implements BackgroundResource {
   /**
    * Updates an existing Instance in a given project and location.
    *
-   * @param update_mask Required. Mask of fields to update. &#42; `displayName`
+   * @param updateMask Required. Mask of fields to update. &#42; `displayName`
    * @param resource Required. A Memcached [Instance] resource. Only fields specified in update_mask
    *     are updated.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -437,7 +437,7 @@ public class CloudMemcacheClient implements BackgroundResource {
    *
    * @param name Required. Resource name of the Memcached instance for which the parameters should
    *     be updated.
-   * @param update_mask Required. Mask of fields to update.
+   * @param updateMask Required. Mask of fields to update.
    * @param parameters The parameters to apply to the instance.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -460,7 +460,7 @@ public class CloudMemcacheClient implements BackgroundResource {
    *
    * @param name Required. Resource name of the Memcached instance for which the parameters should
    *     be updated.
-   * @param update_mask Required. Mask of fields to update.
+   * @param updateMask Required. Mask of fields to update.
    * @param parameters The parameters to apply to the instance.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -568,8 +568,8 @@ public class CloudMemcacheClient implements BackgroundResource {
    *
    * @param name Required. Resource name of the Memcached instance for which parameter group updates
    *     should be applied.
-   * @param node_ids Nodes to which we should apply the instance-level parameter group.
-   * @param apply_all Whether to apply instance-level parameter group to all nodes. If set to true,
+   * @param nodeIds Nodes to which we should apply the instance-level parameter group.
+   * @param applyAll Whether to apply instance-level parameter group to all nodes. If set to true,
    *     will explicitly restrict users from specifying any nodes, and apply parameter group updates
    *     to all nodes within the instance.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -592,8 +592,8 @@ public class CloudMemcacheClient implements BackgroundResource {
    *
    * @param name Required. Resource name of the Memcached instance for which parameter group updates
    *     should be applied.
-   * @param node_ids Nodes to which we should apply the instance-level parameter group.
-   * @param apply_all Whether to apply instance-level parameter group to all nodes. If set to true,
+   * @param nodeIds Nodes to which we should apply the instance-level parameter group.
+   * @param applyAll Whether to apply instance-level parameter group to all nodes. If set to true,
    *     will explicitly restrict users from specifying any nodes, and apply parameter group updates
    *     to all nodes within the instance.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
