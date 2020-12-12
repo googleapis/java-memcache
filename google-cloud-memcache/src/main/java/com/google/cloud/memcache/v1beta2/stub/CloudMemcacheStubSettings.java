@@ -62,7 +62,6 @@ import com.google.longrunning.Operation;
 import com.google.protobuf.Empty;
 import java.io.IOException;
 import java.util.List;
-import java.util.Objects;
 import javax.annotation.Generated;
 import org.threeten.bp.Duration;
 
@@ -155,7 +154,7 @@ public class CloudMemcacheStubSettings extends StubSettings<CloudMemcacheStubSet
 
             @Override
             public Iterable<Instance> extractResources(ListInstancesResponse payload) {
-              return Objects.isNull(payload.getResourcesList())
+              return payload.getResourcesList() == null
                   ? ImmutableList.<Instance>of()
                   : payload.getResourcesList();
             }
