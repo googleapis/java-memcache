@@ -3,23 +3,31 @@
     {
       "git": {
         "name": ".",
-        "remote": "https://github.com/googleapis/java-memcache.git",
-        "sha": "fd8448deacffd475072d1f1009327a5505c61c75"
+        "remote": "git@github.com:googleapis/java-memcache.git",
+        "sha": "2eba919c885f48956c6f042bc438735c244cf9e8"
       }
     },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "91e206bcfeaf8948ea03fe3cb1b7616108496cd3",
-        "internalRef": "350949863"
+        "sha": "f83715b48369c8d43548cc3cd84015e60be94cf2",
+        "internalRef": "352834280"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "f83715b48369c8d43548cc3cd84015e60be94cf2",
+        "internalRef": "352834280"
       }
     },
     {
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "6133907dbb3ddab204a17a15d5c53ec0aae9b033"
+        "sha": "b259489b06b25f399768b74b8baa943991f38ea7"
       }
     }
   ],
@@ -32,122 +40,15 @@
         "language": "java",
         "generator": "bazel"
       }
+    },
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "memcache",
+        "apiVersion": "v1",
+        "language": "java",
+        "generator": "bazel"
+      }
     }
-  ],
-  "generatedFiles": [
-    ".github/CODEOWNERS",
-    ".github/ISSUE_TEMPLATE/bug_report.md",
-    ".github/ISSUE_TEMPLATE/feature_request.md",
-    ".github/ISSUE_TEMPLATE/support_request.md",
-    ".github/PULL_REQUEST_TEMPLATE.md",
-    ".github/blunderbuss.yml",
-    ".github/generated-files-bot.yml",
-    ".github/readme/synth.py",
-    ".github/release-please.yml",
-    ".github/snippet-bot.yml",
-    ".github/trusted-contribution.yml",
-    ".github/workflows/approve-readme.yaml",
-    ".github/workflows/auto-release.yaml",
-    ".github/workflows/ci.yaml",
-    ".github/workflows/samples.yaml",
-    ".kokoro/build.bat",
-    ".kokoro/build.sh",
-    ".kokoro/coerce_logs.sh",
-    ".kokoro/common.cfg",
-    ".kokoro/common.sh",
-    ".kokoro/continuous/common.cfg",
-    ".kokoro/continuous/java8.cfg",
-    ".kokoro/continuous/readme.cfg",
-    ".kokoro/dependencies.sh",
-    ".kokoro/linkage-monitor.sh",
-    ".kokoro/nightly/common.cfg",
-    ".kokoro/nightly/integration.cfg",
-    ".kokoro/nightly/java11.cfg",
-    ".kokoro/nightly/java7.cfg",
-    ".kokoro/nightly/java8-osx.cfg",
-    ".kokoro/nightly/java8-win.cfg",
-    ".kokoro/nightly/java8.cfg",
-    ".kokoro/nightly/samples.cfg",
-    ".kokoro/populate-secrets.sh",
-    ".kokoro/presubmit/clirr.cfg",
-    ".kokoro/presubmit/common.cfg",
-    ".kokoro/presubmit/dependencies.cfg",
-    ".kokoro/presubmit/integration.cfg",
-    ".kokoro/presubmit/java11.cfg",
-    ".kokoro/presubmit/java7.cfg",
-    ".kokoro/presubmit/java8-osx.cfg",
-    ".kokoro/presubmit/java8-win.cfg",
-    ".kokoro/presubmit/java8.cfg",
-    ".kokoro/presubmit/linkage-monitor.cfg",
-    ".kokoro/presubmit/lint.cfg",
-    ".kokoro/presubmit/samples.cfg",
-    ".kokoro/readme.sh",
-    ".kokoro/release/bump_snapshot.cfg",
-    ".kokoro/release/common.cfg",
-    ".kokoro/release/common.sh",
-    ".kokoro/release/drop.cfg",
-    ".kokoro/release/drop.sh",
-    ".kokoro/release/promote.cfg",
-    ".kokoro/release/promote.sh",
-    ".kokoro/release/publish_javadoc.cfg",
-    ".kokoro/release/publish_javadoc.sh",
-    ".kokoro/release/snapshot.cfg",
-    ".kokoro/release/snapshot.sh",
-    ".kokoro/release/stage.cfg",
-    ".kokoro/release/stage.sh",
-    ".kokoro/trampoline.sh",
-    "CODE_OF_CONDUCT.md",
-    "CONTRIBUTING.md",
-    "LICENSE",
-    "codecov.yaml",
-    "google-cloud-memcache/src/main/java/com/google/cloud/memcache/v1beta2/CloudMemcacheClient.java",
-    "google-cloud-memcache/src/main/java/com/google/cloud/memcache/v1beta2/CloudMemcacheSettings.java",
-    "google-cloud-memcache/src/main/java/com/google/cloud/memcache/v1beta2/package-info.java",
-    "google-cloud-memcache/src/main/java/com/google/cloud/memcache/v1beta2/stub/CloudMemcacheStub.java",
-    "google-cloud-memcache/src/main/java/com/google/cloud/memcache/v1beta2/stub/CloudMemcacheStubSettings.java",
-    "google-cloud-memcache/src/main/java/com/google/cloud/memcache/v1beta2/stub/GrpcCloudMemcacheCallableFactory.java",
-    "google-cloud-memcache/src/main/java/com/google/cloud/memcache/v1beta2/stub/GrpcCloudMemcacheStub.java",
-    "google-cloud-memcache/src/test/java/com/google/cloud/memcache/v1beta2/CloudMemcacheClientTest.java",
-    "google-cloud-memcache/src/test/java/com/google/cloud/memcache/v1beta2/MockCloudMemcache.java",
-    "google-cloud-memcache/src/test/java/com/google/cloud/memcache/v1beta2/MockCloudMemcacheImpl.java",
-    "grpc-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/CloudMemcacheGrpc.java",
-    "java.header",
-    "license-checks.xml",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/ApplyParametersRequest.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/ApplyParametersRequestOrBuilder.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/CloudMemcacheProto.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/CreateInstanceRequest.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/CreateInstanceRequestOrBuilder.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/DeleteInstanceRequest.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/DeleteInstanceRequestOrBuilder.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/GetInstanceRequest.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/GetInstanceRequestOrBuilder.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/Instance.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/InstanceName.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/InstanceOrBuilder.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/ListInstancesRequest.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/ListInstancesRequestOrBuilder.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/ListInstancesResponse.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/ListInstancesResponseOrBuilder.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/LocationMetadata.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/LocationMetadataOrBuilder.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/LocationName.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/MemcacheParameters.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/MemcacheParametersOrBuilder.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/MemcacheVersion.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/OperationMetadata.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/OperationMetadataOrBuilder.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/UpdateInstanceRequest.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/UpdateInstanceRequestOrBuilder.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/UpdateParametersRequest.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/UpdateParametersRequestOrBuilder.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/ZoneMetadata.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/ZoneMetadataOrBuilder.java",
-    "proto-google-cloud-memcache-v1beta2/src/main/proto/google/cloud/memcache/v1beta2/cloud_memcache.proto",
-    "renovate.json",
-    "samples/install-without-bom/pom.xml",
-    "samples/pom.xml",
-    "samples/snapshot/pom.xml",
-    "samples/snippets/pom.xml"
   ]
 }
