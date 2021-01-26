@@ -87,6 +87,7 @@ pushd target/docfx-yml
 
 # create metadata
 python3 -m docuploader create-metadata \
+ --name ${NAME} \
  --version ${VERSION} \
  --language java
 
