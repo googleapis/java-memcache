@@ -4,23 +4,23 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-memcache.git",
-        "sha": "f72f8b74b79f6d64cab8205a089b1888cf31188a"
+        "sha": "182927c37930447cf9415b9142b9a028ee08d0dd"
       }
     },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "8d8c008e56f1af31d57f75561e0f1848ffb29eeb",
-        "internalRef": "356341083"
+        "sha": "84cf54e45ed5970980ae868e0a1e5ad1266a8830",
+        "internalRef": "356380191"
       }
     },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "8d8c008e56f1af31d57f75561e0f1848ffb29eeb",
-        "internalRef": "356341083"
+        "sha": "84cf54e45ed5970980ae868e0a1e5ad1266a8830",
+        "internalRef": "356380191"
       }
     },
     {
@@ -171,6 +171,8 @@
     "proto-google-cloud-memcache-v1/src/main/proto/google/cloud/memcache/v1/cloud_memcache.proto",
     "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/ApplyParametersRequest.java",
     "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/ApplyParametersRequestOrBuilder.java",
+    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/ApplySoftwareUpdateRequest.java",
+    "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/ApplySoftwareUpdateRequestOrBuilder.java",
     "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/CloudMemcacheProto.java",
     "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/CreateInstanceRequest.java",
     "proto-google-cloud-memcache-v1beta2/src/main/java/com/google/cloud/memcache/v1beta2/CreateInstanceRequestOrBuilder.java",
