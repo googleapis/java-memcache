@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://www.github.com/googleapis/java-memcache/compare/v1.1.2...v1.2.0) (2021-08-04)
+
+
+### Features
+
+* configure initial sp version ([#460](https://www.github.com/googleapis/java-memcache/issues/460)) ([cb53828](https://www.github.com/googleapis/java-memcache/commit/cb5382815bd29d8e13573db4c9a60366d917d6f8))
+
 ### [1.1.2](https://www.github.com/googleapis/java-memcache/compare/v1.1.1...v1.1.2) (2021-07-02)
 
 
