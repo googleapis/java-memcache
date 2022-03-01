@@ -1,5 +1,19 @@
 # Changelog
 
+### [2.1.8](https://github.com/googleapis/java-memcache/compare/v2.1.7...v2.1.8) (2022-02-28)
+
+
+### Dependencies
+
+* update actions/setup-java action to v3 ([#591](https://github.com/googleapis/java-memcache/issues/591)) ([0fa4eb8](https://github.com/googleapis/java-memcache/commit/0fa4eb8e97ba09cd5df5c0212f2a25dc8ea1e315))
+
+### [2.1.7](https://github.com/googleapis/java-memcache/compare/v2.1.6...v2.1.7) (2022-02-11)
+
+
+### Dependencies
+
+* update actions/github-script action to v6 ([#584](https://github.com/googleapis/java-memcache/issues/584)) ([284c342](https://github.com/googleapis/java-memcache/commit/284c3428e543ca71faf862836fda9b668d6fd9a7))
+
 ### [2.1.6](https://github.com/googleapis/java-memcache/compare/v2.1.5...v2.1.6) (2022-02-03)
 
 
