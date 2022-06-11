@@ -17,6 +17,7 @@ docker:
 
 deep-remove-regex:
 - "/samples/snippets/generated"
+- "/samples/snippets/generated"
 - "/grpc-google-.*/src"
 - "/proto-google-.*/src"
 - "/google-.*/src"
@@ -31,5 +32,7 @@ deep-copy-regex:
   dest: "/owl-bot-staging/$1/grpc-google-cloud-memcache-$1/src"
 - source: "/google/cloud/memcache/(v.*)/.*-java/gapic-google-.*/src"
   dest: "/owl-bot-staging/$1/google-cloud-memcache/src"
+- source: "/google/cloud/memcache/(v.*)/.*-java/samples/snippets/generated"
+  dest: "/owl-bot-staging/$1/samples/snippets/generated"
 - source: "/google/cloud/memcache/(v.*)/.*-java/samples/snippets/generated"
   dest: "/owl-bot-staging/$1/samples/snippets/generated"
