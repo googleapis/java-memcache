@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.6](https://github.com/googleapis/java-memcache/compare/v2.3.5...v2.3.6) (2022-10-05)
+
+
+### Bug Fixes
+
+* update protobuf to v3.21.7 ([eb6e2d8](https://github.com/googleapis/java-memcache/commit/eb6e2d8fe27315ecabb8e70e07e89a4771663641))
+
 ## [2.3.5](https://github.com/googleapis/java-memcache/compare/v2.3.4...v2.3.5) (2022-10-03)
 
 
